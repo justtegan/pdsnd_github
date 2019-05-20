@@ -1,15 +1,19 @@
 ### Date created
-Include the date you created this project and README file.
+2019-05-14
 
 ### Project Title
-Replace the Project Title
+Bikeshare Data Analysis
 
 ### Description
-Describe what your project is about and what it does
+Project uses Python to explore data related to bike share systems for three major cities in the United States: Chicago, New York City, and Washington DC. Takes in raw input to create an interactive experience in the terminal to present bikeshare statistics.
 
 ### Files used
-Include the files used
+'chicago.csv'
+'new_york_city.csv'
+'washington.csv'
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+https://stackoverflow.com/questions/40621802/sort-the-most-frequent-combinations-of-two-columns-in-descending-order
+
+
 
