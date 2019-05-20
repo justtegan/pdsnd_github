@@ -98,7 +98,7 @@ def load_data(city, month, day):
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
-    print('\nCalculating The Most Frequent Times of Travel...\n')
+    print('\nCalculating most frequent travel times...\n')
     start_time = time.time()
 
     # TO DO: display the most common month
@@ -111,7 +111,7 @@ def time_stats(df):
     # find the most common day of week
     popular_day = df['day_of_week'].mode()[0]
 
-    print('Most Popular Day Of Week:', popular_day)
+    print('Most Popular Day of Week:', popular_day)
 
     # TO DO: display the most common start hour
     # extract hour from the Start Time column to create an hour column
@@ -130,7 +130,7 @@ def time_stats(df):
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
-    print('\nCalculating The Most Popular Stations and Trip...\n')
+    print('\nCalculating most popular stations and trip...\n')
     start_time = time.time()
 
     # TO DO: display most commonly used start station
@@ -154,7 +154,7 @@ def station_stats(df):
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
-    print('\nCalculating Trip Duration...\n')
+    print('\nCalculating trip duration...\n')
     start_time = time.time()
 
     # TO DO: display total travel time
