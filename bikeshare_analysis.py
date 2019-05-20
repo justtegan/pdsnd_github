@@ -19,13 +19,13 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello! Let\'s explore some US bikeshare data because what else would we be doing at 1 AM on a worknight. Three cheers for self-improvement.')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         try:
             city = str(input("Enter city: "))
             if city not in CITY_DATA.keys():
-                print(F"Not a valid city, please chose one of: {', '.join(CITY_DATA)}")
+                print(F"Not a valid city, please chose one of: {', '.join(CITY_DATA)}, and be sure to capitalize.")
                 continue
         except ValueError:
             print("Not a valid string")
@@ -37,7 +37,7 @@ def get_filters():
         try:
             month = str(input("Enter month: "))
             if month not in MONTHS and month != "All":
-                print(F"Not a valid month, please chose one of: {', '.join(MONTHS)}, All")
+                print(F"Not a valid month, please chose one of: {', '.join(MONTHS)}, All. Be sure to capitalize.")
                 continue
         except ValueError:
             print("Not a valid string")
@@ -48,9 +48,9 @@ def get_filters():
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
         try:
-            day = str(input("Enter day: "))
+            day = str(input("Enter a day of the week: "))
             if day not in DAYS and day != "All":
-                print(F"Not a valid day, please chose one of: {', '.join(DAYS)}, All")
+                print(F"Not a valid day, please chose one of: {', '.join(DAYS)}, All. Be sure to capitalize.")
                 continue
         except ValueError:
             print("Not a valid string")
@@ -98,7 +98,7 @@ def load_data(city, month, day):
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
-    print('\nCalculating The Most Frequent Times of Travel...\n')
+    print('\nCalculating most frequent travel times...\n')
     start_time = time.time()
 
     # TO DO: display the most common month
@@ -111,7 +111,7 @@ def time_stats(df):
     # find the most common day of week
     popular_day = df['day_of_week'].mode()[0]
 
-    print('Most Popular Day Of Week:', popular_day)
+    print('Most Popular Day of Week:', popular_day)
 
     # TO DO: display the most common start hour
     # extract hour from the Start Time column to create an hour column
@@ -130,7 +130,7 @@ def time_stats(df):
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
-    print('\nCalculating The Most Popular Stations and Trip...\n')
+    print('\nCalculating most popular stations and trip...\n')
     start_time = time.time()
 
     # TO DO: display most commonly used start station
@@ -154,7 +154,7 @@ def station_stats(df):
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
-    print('\nCalculating Trip Duration...\n')
+    print('\nCalculating trip duration...\n')
     start_time = time.time()
 
     # TO DO: display total travel time
