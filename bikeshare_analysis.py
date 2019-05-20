@@ -25,7 +25,7 @@ def get_filters():
         try:
             city = str(input("Enter city: "))
             if city not in CITY_DATA.keys():
-                print(F"Not a valid city, please chose one of: {', '.join(CITY_DATA)}")
+                print(F"Not a valid city, please chose one of: {', '.join(CITY_DATA)}, and be sure to capitalize.")
                 continue
         except ValueError:
             print("Not a valid string")
@@ -37,7 +37,7 @@ def get_filters():
         try:
             month = str(input("Enter month: "))
             if month not in MONTHS and month != "All":
-                print(F"Not a valid month, please chose one of: {', '.join(MONTHS)}, All")
+                print(F"Not a valid month, please chose one of: {', '.join(MONTHS)}, All. Be sure to capitalize.")
                 continue
         except ValueError:
             print("Not a valid string")
@@ -48,9 +48,9 @@ def get_filters():
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
         try:
-            day = str(input("Enter day: "))
+            day = str(input("Enter a day of the week: "))
             if day not in DAYS and day != "All":
-                print(F"Not a valid day, please chose one of: {', '.join(DAYS)}, All")
+                print(F"Not a valid day, please chose one of: {', '.join(DAYS)}, All. Be sure to capitalize.")
                 continue
         except ValueError:
             print("Not a valid string")
